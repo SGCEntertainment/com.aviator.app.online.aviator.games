@@ -1,0 +1,5 @@
+﻿Rules of the game!
+
+You need to choose the number of the aircraft that will make the flight.
+
+Use the + and - buttons to make your choice and press the "stop" button while the take-off lights are flickering.
