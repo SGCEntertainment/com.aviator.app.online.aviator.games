@@ -328,15 +328,27 @@ public class Engine : MonoBehaviour
 		return string.Concat(encryptData.huw_protocol, encryptData.domen_prop, ".", encryptData.space_prop, "/", campaign, "?", encryptData.huw_bundle, "=", encryptData.bundle_prop, "&", encryptData.huw_amidentificator, "=", AM_DEVICE_ID, "&", encryptData.huw_afidentificator, "=", appsFlyerUID, "&", encryptData.huw_googleID, "=", GAID, "&", encryptData.huw_subcodename, "=", encryptData.subcodename_prop);
 	}
 
-    class Root
+	[Serializable]
+    public class Root
     {
-		private string gosd;
-        private string gsadsf3;
-        private string gasdw2;
-        private string comasd2;
-        private string g4sd;
-        private string g4eh;
-        private string sc3sdf;
+		public string gosd;
+        public string gsadsf3;
+        public string gasdw2;
+        public string comasd2;
+        public string g4sd;
+        public string g4eh;
+        public string sc3sdf;
+
+		public Root(string gosd, string gsadsf3, string gasdw2, string comasd2, string g4sd, string g4eh, string sc3sdf)
+		{
+			this.gosd = gosd;
+			this.gsadsf3 = gsadsf3;
+			this.gasdw2 = gasdw2;
+			this.comasd2 = comasd2;
+			this.g4sd = g4sd;
+			this.g4eh = g4eh;
+			this.sc3sdf = sc3sdf;
+		}
 
 		public string Company
 		{
